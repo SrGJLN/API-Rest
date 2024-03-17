@@ -2,7 +2,7 @@ import { pool } from '../../src/db/db.js';
 import format from 'pg-format';
 import filterQuery from '../helpers/filters.js';
 
-const getJoyasLimitModel = async ( limit = 1, page = 1, order_by = "id_ASC" ) => {
+const getJoyasLimitModel = async ( order_by = "id_ASC", limit = 1, page = 1 ) => {
       const [field, direction] = order_by.split("_");
       const offset = (page) * limit;
   const formatQuery = format(

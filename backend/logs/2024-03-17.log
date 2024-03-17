@@ -308,3 +308,67 @@ Started GET /api/v1/joyas/filtros?precio_max=20000&precio_min=15000&categoria=co
 Started GET /api/v1/joyas/filtros?precio_max=20000&precio_min=15000&categoria=collar&metal=oro for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 15:16:08 GMT-0300 (hora de verano de Chile)
   Parameters in body: {}
 Completed: 200 message:  Time response: 12 ms Request ID: [fcaeba45-2a61-447f-8f7d-4dfb27e513cd]
+
+Started GET /api/v1/joyas for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:04:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 65 ms Request ID: [aab40089-ddb9-4a04-b6fb-9ff62880d809]
+
+Started GET /api/v1/joyas?order_by=id_ASC for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:04:50 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 58 ms Request ID: [fdd4152f-1fe7-4278-a5d8-20b872895097]
+
+Started GET /api/v1/joyas?order_by=id_ASC&limit=3 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:05:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 57 ms Request ID: [438ccc3b-a1cf-4cfe-8ab2-b582195edbca]
+
+Started GET /api/v1/joyas?order_by=id_ASC&limit=3&page=1 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:05:26 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 57 ms Request ID: [a578f7c0-c4d4-49fe-8671-567bd9465bad]
+
+Started GET /api/v1/joyas?order_by=id_ASC&limit=5&page=1 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:05:35 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 6 ms Request ID: [c7db64c7-1e70-4aa3-8f01-f8111baa20e1]
+
+Started GET /api/v1/joyas?order_by=id_ASC&limit=2&page=1 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:05:44 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 7 ms Request ID: [4ab23d58-659c-48bd-91ee-e64419ebc647]
+
+Started GET /api/v1/joyas?order_by=id_ASC&limit=4&page=1 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:05:51 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 6 ms Request ID: [916a990f-9226-4d98-9ebb-8cd34716f186]
+
+Started GET /api/v1/joyas?order_by=id_ASC&limit=1&page=1 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:06:00 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 6 ms Request ID: [618cf6bb-0f2e-49e5-9822-cde42ba08160]
+
+Started GET /api/v1/joyas?order_by=id_ASC&limit=1&page=2 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:06:04 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 6 ms Request ID: [f863b29b-6343-4bfd-93e6-3d0330d92a2e]
+
+Started GET /api/v1/joyas?order_by=id_ASC&limit=2&page=2 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:06:08 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 5 ms Request ID: [28904a74-3271-4bf6-acdb-274312871d7a]
+
+Started GET /api/v1/joyas?order_by=id_ASC&limit=3&page=2 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:06:15 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 7 ms Request ID: [6a52972e-ea98-41b4-9d77-26a7e4868f4d]
+
+Started GET /api/v1/joyas?order_by=stock_ASC&limit=3&page=2 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:06:49 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 58 ms Request ID: [1af760db-758a-4697-bd84-ca849f30d87f]
+
+Started GET /api/v1/joyas?order_by=stock_ASC&limit=1&page=2 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:07:26 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 58 ms Request ID: [4cdf1d29-ac2b-4227-8255-4e4e4706b1fc]
+
+Started GET /api/v1/joyas?order_by=stock_ASC&limit=1&page=1 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:07:31 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 5 ms Request ID: [b279f0e1-3d32-4fb9-8a24-9304a0a368f9]
+
+Started GET /api/v1/joyas?order_by=stock_ASC&limit=3&page=1 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:07:37 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 7 ms Request ID: [763f3edb-d1f2-48ac-acf9-e6682052445e]
+
+Started GET /api/v1/joyas?order_by=stock_DESC&limit=3&page=1 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 16:07:42 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 7 ms Request ID: [47a780d1-d351-4900-92c6-01776f1ba318]
