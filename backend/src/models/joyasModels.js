@@ -12,14 +12,13 @@ const getJoyasLimitModel = async ( limit = 1, page = 1, order_by = "id_ASC" ) =>
     limit,
     offset
   );
-  console.log("query: ", formatQuery);
+  
   const response = await pool.query(formatQuery);
-  console.log("response", response);
   return response.rows;
   };
 
 
-  const getJoyasFilterModel = async ({ ...filter }) => {
+  const getJoyasFilterModel = async (filter) => {
     const { query, values } = await filterQuery("inventario", filter);
     const formatQuery = {
         text: query,

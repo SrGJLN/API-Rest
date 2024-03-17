@@ -290,3 +290,21 @@ Completed: 200 message:  Time response: 60 ms Request ID: [a743bf53-63ef-4204-9a
 Started GET /api/v1/joyas?limit=3&page=2 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 14:48:52 GMT-0300 (hora de verano de Chile)
   Parameters in body: {}
 Completed: 200 message:  Time response: 53 ms Request ID: [78885606-26b3-4990-9322-c0de0e05a872]
+
+Started GET /api/v1/joyas?limit=3&page=2 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 14:50:06 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 22 ms Request ID: [8ab33a6d-ba86-45c1-92b4-4f46162d2292]
+
+Started GET /api/v1/joyas/filtros?precio_max=20000&precio_min=15000 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 15:12:10 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 61 ms Request ID: [8bd6f4e2-cf9c-4a3e-b08e-b185de380610]
+
+Started GET /api/v1/joyas/filtros?precio_max=20000&precio_min=15000&categoria=collar&metal=oro for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 15:12:16 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 6 ms Request ID: [cc51f29e-9d46-45a6-a85a-a921d530d85d]
+
+Started GET /api/v1/joyas/filtros?precio_max=20000&precio_min=15000&categoria=collar&metal=oro for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 15:15:24 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Started GET /api/v1/joyas/filtros?precio_max=20000&precio_min=15000&categoria=collar&metal=oro for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 15:16:08 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 12 ms Request ID: [fcaeba45-2a61-447f-8f7d-4dfb27e513cd]
