@@ -286,3 +286,7 @@ Completed: 200 message:  Time response: 37 ms Request ID: [bd7467da-fadb-465d-8f
 Started GET /api/v1/joyas?limit=3&page=2 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 14:44:21 GMT-0300 (hora de verano de Chile)
   Parameters in body: {}
 Completed: 200 message:  Time response: 60 ms Request ID: [a743bf53-63ef-4204-9a94-e6982cdf3dc1]
+
+Started GET /api/v1/joyas?limit=3&page=2 for :: ::ffff:127.0.0.1 at Sun Mar 17 2024 14:48:52 GMT-0300 (hora de verano de Chile)
+  Parameters in body: {}
+Completed: 200 message:  Time response: 53 ms Request ID: [78885606-26b3-4990-9322-c0de0e05a872]

@@ -9,7 +9,10 @@ const getJoyasLimitController = async (req, res) => {
       const styleHateos = await HATEOAS(results)
       res.status(200).json(styleHateos);
     } catch (error) {
-      return res.status(500).json({ message: error.message });
+      const errorFound = findError(error.code);
+    return res
+      .status(errorFound[0].status)
+      .json({ error: errorFound[0].message });
     }
   };
 
@@ -20,7 +23,10 @@ const getJoyasLimitController = async (req, res) => {
         res.status(200).json(data);
     }
     catch (error) {
-      return res.status(500).json({ message: error.message });
+      const errorFound = findError(error.code);
+    return res
+      .status(errorFound[0].status)
+      .json({ error: errorFound[0].message });
     }
 };
 
