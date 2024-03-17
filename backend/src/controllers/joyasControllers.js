@@ -1,45 +1,27 @@
-import { getJoyasLimitModel, getAllJoyasModel} from '../../src/models/joyasModels.js';
-import paginator from '../helpers/paginator.js';
+import { getJoyasLimitModel, getJoyasFilterModel} from '../../src/models/joyasModels.js';
+import HATEOAS from '../helpers/hateoas.js';
+import { findError } from '../utils/utils.js';
 
 const getJoyasLimitController = async (req, res) => {
     try {
       const { order_by, limit, page } = req.query;
       const results = await getJoyasLimitModel(order_by, limit, page);
-      res.status(200).json({ results: results });
+      const styleHateos = await HATEOAS(results)
+      res.status(200).json(styleHateos);
     } catch (error) {
-      const errorFound = findError(error.code);
-      return res
-        .status(errorFound[0].status)
-        .json({ error: errorFound[0].message });
+      return res.status(500).json({ message: error.message });
     }
   };
 
-  const getJoyasHateoas = async (req, res) => {
+  const getJoyasFilterController = async (req, res) => {
     try {
-      const results = await getAllJoyasModel();
-      const resultHateoas = await HATEOAS( 'results', results );
-      res.status(200).json({ results: resultHateoas });
-    } catch (error) {
-      const errorFound = findError(error.code);
-      return res
-        .status(errorFound[0].status)
-        .json({ error: errorFound[0].message });
+        const query = req.query;
+        const data = await getJoyasFilterModel(query);
+        res.status(200).json(data);
     }
-  };
-
-  const getPaginator = async (req, res) => {
-    try {
-      const { items, page } = req.query;
-      const results = await getAllJoyasModel();
-      const paginationData = paginator(results, items, page);
-      res.status(200).json(paginationData);
-    } catch (error) {
-      console.log("error", error);
-      const errorFound = findError(error.code);
-      return res
-        .status(errorFound[0].status)
-        .json({ error: errorFound[0].message });
+    catch (error) {
+      return res.status(500).json({ message: error.message });
     }
-  };
+};
 
-  export { getJoyasLimitController, getJoyasHateoas};
+  export { getJoyasLimitController, getJoyasFilterController};

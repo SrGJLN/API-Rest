@@ -1,15 +1,15 @@
-const HATEOAS = async (entity, data) => {
-    const stockJoyas = data
-    .map((item) =>{
+const HATEOAS = async (data) => {
+    const stockJoyas = data.map((item) =>{
         return{
             nombre: item.nombre,
-            href: `http://localhost:3000/api/v1/${entity}/${item.id}`
+            href: `http://localhost:3000/api/v1/joyas/${item.id}`,
         }
     })
-    .slice(0,4);
+    
     const totalJoyas = data.length;
-    const dataHateoas = {totalJoyas, stockJoyas};
+    const stockTotal = data.reduce((acc, cur) => (acc += cur.stock), 0);
+    const dataHateoas = {totalJoyas, stockTotal,stockJoyas};
     return dataHateoas;
-}
+};
 
 export default HATEOAS;
