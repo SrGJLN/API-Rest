@@ -28,48 +28,4 @@ const getJoyasLimitModel = async ( order_by = "id_ASC", limit = 1, page = 1 ) =>
     return response.rows;
 };
 
-  // const getJoyasFilterModel = async ({ precio_max, precio_min, categoria, metal }) => {
-    
-  //   const query = 'SELECT * FROM inventario WHERE true ';
-  //     const queryParams = [];
-  
-  //     if (precio_max) {
-  //       query += 'AND precio <= $1 ';
-  //       queryParams.push(precio_max);
-  //     }
-  //     if (precio_min) {
-  //       query += 'AND precio >= $2 ';
-  //       queryParams.push(precio_min);
-  //     }
-  //     if (categoria) {
-  //       query += 'AND categoria = $3 ';
-  //       queryParams.push(categoria);
-  //     }
-  //     if (metal) {
-  //       query += 'AND metal = $4 ';
-  //       queryParams.push(metal);
-  //     }
-  
-  //     const { rows } = await pool.query(query, queryParams);
-  
-  //     const joyas = rows.map(joya => {
-  //       return {
-  //         id: joya.id,
-  //         nombre: joya.nombre,
-  //         categoria: joya.categoria,
-  //         metal: joya.metal,
-  //         precio: joya.precio,
-  //         stock: joya.stock,
-  //         links: {
-  //           self: `/inventario/${joya.id}`
-  //         }
-  //       };
-  //     });
-  
-  //     res.json({
-  //       data: joyas
-  //     });
-  
-  // };
-
   export { getJoyasLimitModel, getJoyasFilterModel};
